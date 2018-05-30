@@ -26,6 +26,6 @@ public class BestSellingBooks {
     }
 
     public ArrayList<Book> getList() {
-        return new ArrayList<>(list);
+        return new ArrayList<Book>(list);
     }
 }

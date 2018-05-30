@@ -1,19 +1,21 @@
 package com.example.pauline.topsellingbookslist;
 
-public class Book {
+import java.io.Serializable;
 
-    private int ranking;
+public class Book implements Serializable{
+
+    private Integer ranking;
     private String title;
-    private int yearPublished;
+    private Integer yearPublished;
 
-    public Book(int ranking, String title, int yearPublished){
+    public Book(Integer ranking, String title, Integer yearPublished){
         this.ranking = ranking;
         this.title = title;
         this.yearPublished = yearPublished;
     }
 
 
-    public int getRanking() {
+    public Integer getRanking() {
         return ranking;
     }
 
@@ -22,7 +24,7 @@ public class Book {
     }
 
 
-    public int getYearPublished() {
+    public Integer getYearPublished() {
         return yearPublished;
     }
 }
